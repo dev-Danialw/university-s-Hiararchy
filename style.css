@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Dancing+Script:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=BIZ+UDGothic&family=Dancing+Script:wght@500&family=Permanent+Marker&display=swap");
+* {
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+
+/*----------------genealogy-scroll----------*/
+
+/* .genealogy-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+.genealogy-scroll::-webkit-scrollbar-track {
+    border-radius: 40px;
+    background-color: #e4e4e4;
+    
+}
+.genealogy-scroll::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.genealogy-scroll::-webkit-scrollbar-thumb:hover {
+    background: #d5b14c;
+    transition: 0.5s;
+} */
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5776dd;
+  border: 1px solid #555555;
+}
+
+html {
+  /* overflow: scroll; */
+}
+
+.designation-card:hover {
+  cursor: pointer;
+}
+/*----------------genealogy-tree----------*/
+.genealogy-body {
+  white-space: nowrap;
+  /* overflow-y: hidden; */
+  padding: 50px;
+  min-height: 500px;
+  padding-top: 10px;
+  text-align: center;
+
+  padding: 4rem;
+  /* min-height: 90vh; */
+  /* padding-bottom:10rem; */
+  padding-bottom: 5rem;
+}
+.genealogy-tree {
+  display: inline-block;
+
+  /*testing*/
+  /* width: 90%; */
+  margin: auto;
+}
+.genealogy-tree ul {
+  padding-top: 20px;
+  position: relative;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+.genealogy-tree li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  /* padding: 50px 5px 0 5px; */
+  padding: 40px 15px 0 35px;
+}
+.genealogy-tree li::before,
+.genealogy-tree li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 2px solid #ccc;
+  width: 50%;
+  height: 38px;
+}
+body {
+  /* -moz-transform: scale(0.68, 0.68); */
+  zoom: 0.7;
+  zoom: 70%;
+}
+.genealogy-tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 2px solid #ccc;
+}
+.genealogy-tree li:only-child::after,
+.genealogy-tree li:only-child::before {
+  display: none;
+}
+.genealogy-tree li:only-child {
+  padding-top: 0;
+}
+.genealogy-tree li:first-child::before,
+.genealogy-tree li:last-child::after {
+  border: 0 none;
+}
+.genealogy-tree li:last-child::before {
+  border-right: 2px solid #ccc;
+  border-radius: 0 5px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+}
+.genealogy-tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+}
+.genealogy-tree ul ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #ccc;
+  width: 0;
+  height: 20px;
+}
+
+.genealogy-tree li div {
+  text-decoration: none;
+  color: #666;
+  font-family: arial, verdana, tahoma;
+  font-size: 11px;
+  /* display: inline-block; */
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.genealogy-tree li div:hover + ul li::after,
+.genealogy-tree li div:hover + ul li::before,
+.genealogy-tree li div:hover + ul::before,
+.genealogy-tree li div:hover + ul ul::before {
+  border-color: #fbba00;
+}
+
+/*--------------memeber-card-design----------*/
+.member-view-box {
+  padding: 0px 20px;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+}
+.member-image {
+  width: 60px;
+  position: relative;
+}
+.member-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: #000;
+  z-index: 1;
+}
+
+.h1-main {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.red {
+  color: red;
+}
+
+/* .card{
+    box-shadow: 3px 9px 24px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 9px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 9px 24px -4px rgba(0,0,0,0.75);
+    transition: all .4s ease;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.card:hover{
+    box-shadow: 5px 11px 30px -2px rgba(15, 14, 14, 0.75);
+
+    transform: scale(1.05);
+
+
+}
+
+.image-container{
+    height: 150px;
+ 
+}
+
+.image-container img{
+
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 68%, 0 100%);
+
+}
+
+.content-container{
+
+    padding: .5rem .8rem;
+    
+}
+.content-container h3{
+    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'BIZ UDGothic', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    
+}
+.content-container h5{
+    margin-top: .7rem;
+    font-size: 1.5rem;
+    font-family: 'BIZ UDGothic', sans-serif;
+    color : #ffb9ad
+    
+
+}
+
+.content-container p{
+    margin-top: 1.3rem;
+    font-weight: bolder;
+    font-family: 'BIZ UDGothic', sans-serif;
+    background-color: #4158D0;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+
+
+    padding: 1rem .5rem;
+    color: white;
+    border-radius: 15px;
+    font-size: .8rem;
+
+    
+}
+
+.content-container span{
+    display: block;
+}
+
+ */
+
+.designation-card {
+  border: 1px solid black;
+  padding: 1rem 3rem;
+}
+
+/*New cards*/
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #fbda61, #ff5acd);
+  } */
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 270px;
+  /* height: 450px; */
+  background: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
+  box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
+  transition: 0.5s;
+  margin-top: 4rem;
+  background-color: rgba(199, 199, 201, 0.5);
+  background-color: rgba(227, 227, 233, 0.5);
+  /* background-color: rgba(227, 227, 233, 0.2); */
+}
+
+.card:hover {
+  height: 300px;
+  width: 370px;
+}
+
+.imgBx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 170px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .imgBx {
+  top: -90px;
+}
+
+.imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* padding-bottom: 1rem; */
+}
+
+.card .content .details {
+  padding: 40px;
+  text-align: center;
+  /* width: 100%; */
+  transition: 0.5s;
+  transform: translateY(100px);
+}
+
+/* .card .content .details:hover {
+    transform: translateY(0px);
+  } */
+
+.card:hover .content .details {
+  transform: translateY(20px);
+}
+
+.card .content .details h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2rem;
+  /* color: white; */
+}
+
+.card .content h3 {
+  margin-top: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-weight: 500;
+  /* opacity: 0.5; */
+  color: white;
+}
+
+.card .content h3 {
+  background: black;
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+  padding: 0.25rem;
+  color: black;
+  border-radius: 15px;
+  color: white;
+}
+
+.card .content .details .actionBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(255, 171, 157, 1);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  /* color: white; */
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #ffab9d;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+
+/* body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #fbda61, #ff5acd);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: linear-gradient(
+    45deg,
+    rgb(251, 218, 97),
+    rgb(255, 90, 205)
+  );
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+} */
+
+.lds-ellipsis {
+  position: relative;
+  left: 50%;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 50vh;
+
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: rgb(3, 11, 12);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* modal */
+
+.infomodal {
+  -webkit-box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
+  box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  width: 60%;
+
+  zoom: 125%;
+}
+.hid {
+  display: none;
+}
+.infomodal::backdrop {
+  background: rgb(0 0 0 / 0.4);
+  /* background: rgba(73, 166, 233, 0.5); */
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  color: lightcoral;
+  cursor: pointer;
+}
+.default-closebtn {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  color: lightcoral;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+/* .modal {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  max-width: 900px;
+  max-height: 900px;
+  width: 90vw;
+  height: 90vh;
+} */
+
+/* left side */
+.lft-side {
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
+  height: inherit;
+}
+.pic {
+  padding: 0.5rem;
+}
+.contact {
+  text-align: left;
+  margin: 1rem;
+}
+.contact h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  padding: 1.2rem 0 1.2rem;
+}
+.contact p {
+  align-items: center;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/* right side */
+.rgt-side {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  text-align: left;
+  white-space: normal;
+  height: inherit;
+  width: 100%;
+  padding: 2.5rem;
+}
+.description {
+  padding: 0.5rem;
+}
+.description h1 {
+  font-weight: 300;
+  font-size: 2em;
+}
+.description h1 > span {
+  font-weight: 600;
+  font-size: rem;
+}
+.description h2 > span {
+  font-weight: 300;
+}
+.description h3 {
+  padding: 1rem 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 320;
+}
+.description p {
+  font-size: 1rem;
+  font-weight: 390;
+  padding: 0.5rem 0 0.5rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* modal */
