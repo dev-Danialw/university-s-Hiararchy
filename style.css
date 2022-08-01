@@ -412,7 +412,8 @@ a {
   gap: 0.4rem;
 
   padding: 1.5rem;
-  min-width: 70%;
+  max-width: 60%;
+
   /* margin: 0; */
 
   /* position: fixed; */
