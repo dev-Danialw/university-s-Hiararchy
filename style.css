@@ -551,3 +551,58 @@ body {
   color: red;
   transform: scale(1.2);
 }
+
+.msg-icn {
+  display: inline-block;
+  position: absolute;
+  left: 56%;
+  top: 12%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: black;
+  box-sizing: border-box;
+  max-width: 400px;
+  min-width: 80px;
+  min-height: 38px;
+}
+.msg-icn:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #e5a002;
+  border-radius: 2px;
+  box-sizing: border-box;
+  clip-path: polygon(
+    0% 105%,
+    0% 0%,
+    105% 0%,
+    105% 105%,
+    43px 105%,
+    43px 80%,
+    21px 80%,
+    21px 105%
+  );
+}
+.msg-icn:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 20px;
+  background: #e5a002;
+  top: calc(100% - 1px);
+  left: 20px;
+  box-sizing: border-box;
+  clip-path: polygon(
+    0 0,
+    0% 100%,
+    100% 0%,
+    calc(100% - 2px) 0,
+    1px calc(100% - 2px),
+    1px 0
+  );
+}
