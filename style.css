@@ -405,19 +405,16 @@ a {
   -webkit-box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
   box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
   border: 1px solid rgba(0, 0, 0, 0.37);
-  border-radius: 10px;
+  border-radius: 12px;
 
   display: flex;
   flex-direction: row;
   gap: 0.4rem;
 
-  padding: 1.5rem;
+  padding: 1.2rem;
   width: 60%;
+  height: 700px;
   zoom: 125%;
-
-  /* margin: 0; */
-
-  /* position: fixed; */
 }
 
 /* @media (max-width: 600px) {
@@ -427,18 +424,13 @@ a {
   .infomodal .lft-side {
     display: flex;
     flex-direction: row;
-    white-space: normal;
   }
-  .pic {
+  .pic > img {
     box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
   }
-  .lft-side .contact h1 {
-    font-size: 1rem;
-    padding: 1.2rem 0 1.2rem;
-  }
 
-  .description > h2 {
-    line-height: normal;
+  .infomodal .rgt-side {
+    height: 100%;
   }
 } */
 
@@ -481,56 +473,44 @@ body {
   color: lightcoral;
   cursor: pointer;
 }
-.default-closebtn {
-  position: absolute;
-  top: 0.2em;
-  right: 0.2rem;
-  font-size: 1.2rem;
-  background: transparent;
-  border-color: transparent;
-  color: lightcoral;
-  cursor: pointer;
-}
-.close-btn:hover {
-  color: red;
-  transform: scale(1.2);
-}
 
 .lft-side {
   display: flex;
   flex-direction: column;
-
   box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
-  height: inherit;
+  height: 100%;
 }
-.pic {
+
+.pic > img {
   padding: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 .contact {
   text-align: left;
-  margin: 1rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 .contact h1 {
   font-size: 1.2rem;
   text-align: center;
   font-weight: 600;
-  padding: 1.2rem 0 1.2rem;
+  margin-top: 2rem;
 }
 .contact p {
   align-items: center;
   font-size: 1rem;
-  line-height: 2rem;
+  margin-top: 2rem;
 }
 
 .rgt-side {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  text-align: left;
-  white-space: normal;
-  height: inherit;
-  padding: 2.5rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 
-.description {
+/* .description {
   padding: 0.5rem;
 }
 .description h1 {
@@ -555,4 +535,19 @@ body {
   padding: 0.5rem 0 0.5rem;
   text-align: justify;
   line-height: 1.5;
+} */
+
+.default-closebtn {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  color: lightcoral;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: red;
+  transform: scale(1.2);
 }
