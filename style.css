@@ -399,6 +399,10 @@ a {
   }
 }
 
+.hid {
+  display: none;
+}
+
 /* modal */
 
 .infomodal {
@@ -414,6 +418,7 @@ a {
   padding: 1.2rem;
   width: 60%;
   height: 700px;
+
   zoom: 125%;
 }
 
@@ -456,33 +461,29 @@ body {
   overflow-x: hidden;
   overflow-y: scroll !important;
 }
-.hid {
-  display: none;
-}
+
 .infomodal::backdrop {
   background: rgb(0 0 0 / 0.4);
 }
 
-.close-btn {
-  position: absolute;
-  top: 0.2em;
-  right: 0.2rem;
-  font-size: 1.2rem;
-  background: transparent;
-  border-color: transparent;
-  color: lightcoral;
-  cursor: pointer;
+.rgt-side {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 .lft-side {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
   height: 100%;
 }
 
 .pic > img {
   padding: 0.5rem;
+  border-radius: 12px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -504,10 +505,29 @@ body {
   margin-top: 2rem;
 }
 
-.rgt-side {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  padding: 0.5rem;
-  width: 100%;
+.close-btn {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  color: lightcoral;
+  cursor: pointer;
+}
+.default-closebtn {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  color: lightcoral;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: red;
+  transform: scale(1.2);
 }
 
 /* .description {
@@ -537,26 +557,10 @@ body {
   line-height: 1.5;
 } */
 
-.default-closebtn {
-  position: absolute;
-  top: 0.2em;
-  right: 0.2rem;
-  font-size: 1.2rem;
-  background: transparent;
-  border-color: transparent;
-  color: lightcoral;
-  cursor: pointer;
-}
-.close-btn:hover {
-  color: red;
-  transform: scale(1.2);
-}
-
 .msg-icn {
   display: inline-block;
-  position: absolute;
+  position: relative;
   left: 56%;
-  top: 12%;
   font-size: 1.5rem;
   padding: 1rem;
   color: black;
