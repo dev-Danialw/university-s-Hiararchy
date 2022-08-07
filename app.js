@@ -13,120 +13,106 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.body.style.overflow = "visible";
   }, 50);
 
+  // $(function () {
+  //   $(".genealogy-tree ul").hide();
+  //   $(".genealogy-tree>ul").show();
+  //   $(".genealogy-tree ul.active").show();
+  //   $(".genealogy-tree li").on("click", function (e) {
+  //     var children = $(this).find("> ul");
+
+  //     if (
+  //       modal17.classList.contains("infomodal") ||
+  //       modal16.classList.contains("infomodal") ||
+  //       modal15.classList.contains("infomodal") ||
+  //       modal14.classList.contains("infomodal") ||
+  //       modal13.classList.contains("infomodal") ||
+  //       modal12.classList.contains("infomodal") ||
+  //       modal11.classList.contains("infomodal") ||
+  //       modal10.classList.contains("infomodal") ||
+  //       modal9.classList.contains("infomodal") ||
+  //       modal8.classList.contains("infomodal") ||
+  //       modal8.classList.contains("infomodal") ||
+  //       modal7.classList.contains("infomodal") ||
+  //       modal6.classList.contains("infomodal") ||
+  //       modal.classList.contains("infomodal") ||
+  //       modal1.classList.contains("infomodal") ||
+  //       modal2.classList.contains("infomodal") ||
+  //       modal3.classList.contains("infomodal") ||
+  //       modal4.classList.contains("infomodal") ||
+  //       modal5.classList.contains("infomodal")
+  //     ) {
+  //       console.log("yes");
+  //     } else if (
+  //       modal17.classList.contains("hid1") ||
+  //       modal16.classList.contains("hid1") ||
+  //       modal15.classList.contains("hid1") ||
+  //       modal14.classList.contains("hid1") ||
+  //       modal13.classList.contains("hid1") ||
+  //       modal12.classList.contains("hid1") ||
+  //       modal11.classList.contains("hid1") ||
+  //       modal10.classList.contains("hid1") ||
+  //       modal9.classList.contains("hid1") ||
+  //       modal8.classList.contains("hid1") ||
+  //       modal8.classList.contains("hid1") ||
+  //       modal7.classList.contains("hid1") ||
+  //       modal6.classList.contains("hid1") ||
+  //       modal.classList.contains("hid1") ||
+  //       modal1.classList.contains("hid1") ||
+  //       modal2.classList.contains("hid1") ||
+  //       modal3.classList.contains("hid1") ||
+  //       modal4.classList.contains("hid1") ||
+  //       modal5.classList.contains("hid1")
+  //     ) {
+  //       console.log("clicked cross");
+  //     } else if (
+  //       modal17.classList.contains("hid2") ||
+  //       modal16.classList.contains("hid2") ||
+  //       modal15.classList.contains("hid2") ||
+  //       modal14.classList.contains("hid2") ||
+  //       modal13.classList.contains("hid2") ||
+  //       modal12.classList.contains("hid2") ||
+  //       modal11.classList.contains("hid2") ||
+  //       modal10.classList.contains("hid2") ||
+  //       modal9.classList.contains("hid2") ||
+  //       modal8.classList.contains("hid2") ||
+  //       modal8.classList.contains("hid2") ||
+  //       modal7.classList.contains("hid2") ||
+  //       modal6.classList.contains("hid2") ||
+  //       modal.classList.contains("hid2") ||
+  //       modal1.classList.contains("hid2") ||
+  //       modal2.classList.contains("hid2") ||
+  //       modal3.classList.contains("hid2") ||
+  //       modal4.classList.contains("hid2") ||
+  //       modal5.classList.contains("hid2")
+  //     ) {
+  //       console.log("view-info clicked");
+  //     } else {
+  //       if (children.is(":visible")) children.hide("fast") ;
+  //       else children.show("fast");
+  //       e.stopPropagation();
+  //     }
+  //   });
+  // });
+  // //
+
   $(function () {
-    $(".genealogy-tree ul").hide();
-    $(".genealogy-tree>ul").show();
-    $(".genealogy-tree ul.active").show();
-    $(".genealogy-tree li").on("click", function (e) {
-      var children = $(this).find("> ul");
-
-      if (
-        modal17.classList.contains("infomodal") ||
-        modal16.classList.contains("infomodal") ||
-        modal15.classList.contains("infomodal") ||
-        modal14.classList.contains("infomodal") ||
-        modal13.classList.contains("infomodal") ||
-        modal12.classList.contains("infomodal") ||
-        modal11.classList.contains("infomodal") ||
-        modal10.classList.contains("infomodal") ||
-        modal9.classList.contains("infomodal") ||
-        modal8.classList.contains("infomodal") ||
-        modal8.classList.contains("infomodal") ||
-        modal7.classList.contains("infomodal") ||
-        modal6.classList.contains("infomodal") ||
-        modal.classList.contains("infomodal") ||
-        modal1.classList.contains("infomodal") ||
-        modal2.classList.contains("infomodal") ||
-        modal3.classList.contains("infomodal") ||
-        modal4.classList.contains("infomodal") ||
-        modal5.classList.contains("infomodal")
-      ) {
-        console.log("yes");
-      } else if (
-        modal17.classList.contains("hid1") ||
-        modal16.classList.contains("hid1") ||
-        modal15.classList.contains("hid1") ||
-        modal14.classList.contains("hid1") ||
-        modal13.classList.contains("hid1") ||
-        modal12.classList.contains("hid1") ||
-        modal11.classList.contains("hid1") ||
-        modal10.classList.contains("hid1") ||
-        modal9.classList.contains("hid1") ||
-        modal8.classList.contains("hid1") ||
-        modal8.classList.contains("hid1") ||
-        modal7.classList.contains("hid1") ||
-        modal6.classList.contains("hid1") ||
-        modal.classList.contains("hid1") ||
-        modal1.classList.contains("hid1") ||
-        modal2.classList.contains("hid1") ||
-        modal3.classList.contains("hid1") ||
-        modal4.classList.contains("hid1") ||
-        modal5.classList.contains("hid1")
-      ) {
-        console.log("clicked cross");
-      } else if (
-        modal17.classList.contains("hid2") ||
-        modal16.classList.contains("hid2") ||
-        modal15.classList.contains("hid2") ||
-        modal14.classList.contains("hid2") ||
-        modal13.classList.contains("hid2") ||
-        modal12.classList.contains("hid2") ||
-        modal11.classList.contains("hid2") ||
-        modal10.classList.contains("hid2") ||
-        modal9.classList.contains("hid2") ||
-        modal8.classList.contains("hid2") ||
-        modal8.classList.contains("hid2") ||
-        modal7.classList.contains("hid2") ||
-        modal6.classList.contains("hid2") ||
-        modal.classList.contains("hid2") ||
-        modal1.classList.contains("hid2") ||
-        modal2.classList.contains("hid2") ||
-        modal3.classList.contains("hid2") ||
-        modal4.classList.contains("hid2") ||
-        modal5.classList.contains("hid2")
-      ) {
-        console.log("view-info clicked");
-      } else {
-        if (children.is(":visible")) children.hide("fast");
-        else children.show("fast");
-        e.stopPropagation();
-      }
+        $('.genealogy-tree ul').hide();
+        $('.genealogy-tree>ul').show();
+        $('.genealogy-tree ul.active').show();
+        $('.genealogy-tree li').on('click', function (e) {
+            var children = $(this).find('> ul');  
+            if (children.is(":visible")) children.hide('fast').removeClass('active');
+            else children.show('fast').addClass('active');
+            e.stopPropagation();
+        });
     });
-  });
 
-  // tidbit
-  const typSpd = 70;
-  const waitTime = 500;
-  const text = ["Click on the card to expand it."];
-  var mi = 0;
 
-  function writeString(e, str, i) {
-    e.innerHTML = e.innerHTML + str[i];
+   
 
-    if (e.innerHTML.length == str.length && mi != text.length)
-      setTimeout(slowlyDelete, waitTime, e);
-  }
+ 
 
-  function deleteString(e) {
-    e.innerHTML = e.innerHTML.substring(0, e.innerHTML.length - 1);
 
-    if (e.innerHTML.length == 0) slowlyWrite(e, text[mi++]);
-  }
-
-  function slowlyDelete(e) {
-    for (var i = 0; i < e.innerHTML.length; i++) {
-      setTimeout(deleteString, (typSpd / 2) * i, e);
-    }
-  }
-
-  function slowlyWrite(e, str) {
-    for (var i = 0; i < str.length; i++) {
-      setTimeout(writeString, typSpd * i, e, str, i);
-    }
-  }
-
-  const msg = document.querySelector(".msg-icn");
-  slowlyDelete(msg);
 
   // modal
   const modal = document.querySelector("#infomodal");
@@ -539,17 +525,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const element13 = document.querySelector("#regis-center");
   const element14 = document.querySelector("#adminis-center");
   const element15 = document.querySelector(".kkk");
+  const element16 = document.querySelectorAll(".controller-exm");
+  const element17 = document.querySelectorAll(".controller-exm-1");
 
   element12.addEventListener("click", () => {
-    console.log("element 12");
-
     setTimeout(() => {
       document.querySelector(".modal2-btn").scrollIntoView({
         behavior: "auto",
         block: "center",
         inline: "center",
       });
-    }, 1000 / 2);
+    }, 200);
   });
 
   element13.addEventListener("click", () => {
@@ -560,7 +546,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         block: "center",
         inline: "center",
       });
-    }, 1000 / 2);
+    }, 400);
   });
   element14.addEventListener("click", () => {
     console.log("element 14");
@@ -570,7 +556,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         block: "center",
         inline: "center",
       });
-    }, 1000 / 2);
+    }, 400);
   });
 
   element15.addEventListener("click", () => {
@@ -582,6 +568,72 @@ document.addEventListener("DOMContentLoaded", function (event) {
         block: "center",
         inline: "center",
       });
-    }, 1000 / 2);
+    }, 400);
+  });
+
+  element16.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 16");
+
+      setTimeout(() => {
+        document.querySelector(".controller-exm").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
+
+  element17.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 17");
+
+      setTimeout(() => {
+        document.querySelector(".controller-exm-1").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
+
+  // tidbit
+  const typSpd = 70;
+  const waitTime = 500;
+  const text = ["Click on the card to expand it."];
+  var mi = 0;
+
+  function writeString(e, str, i) {
+    e.innerHTML = e.innerHTML + str[i];
+
+    if (e.innerHTML.length == str.length && mi != text.length)
+      setTimeout(slowlyDelete, waitTime, e);
+  }
+
+  function deleteString(e) {
+    e.innerHTML = e.innerHTML.substring(0, e.innerHTML.length - 1);
+
+    if (e.innerHTML.length == 0) slowlyWrite(e, text[mi++]);
+  }
+
+  function slowlyDelete(e) {
+    for (var i = 0; i < e.innerHTML.length; i++) {
+      setTimeout(deleteString, (typSpd / 2) * i, e);
+    }
+  }
+
+  function slowlyWrite(e, str) {
+    for (var i = 0; i < str.length; i++) {
+      setTimeout(writeString, typSpd * i, e, str, i);
+    }
+  }
+
+  const msg = document.querySelector(".msg-icn");
+  slowlyDelete(msg);
+
+  document.querySelector(".kkk").addEventListener("click", () => {
+    document.querySelector(".msg-icn").style.display = "none";
   });
 });
