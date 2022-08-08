@@ -744,29 +744,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }, 100);
   });
 
-  // modal28
-  const modal28 = document.querySelector("#infomodal28");
-  const openModal28 = document.querySelector(".open-button28");
-  const closeModal28 = document.querySelector(".close-btn28");
-
-  openModal28.addEventListener("click", () => {
-    modal28.showModal();
-    modal28.setAttribute("class", "infomodal hid2");
-
-    setTimeout(() => {
-      modal27.classList.remove("hid2");
-    }, 100);
-  });
-
-  closeModal28.addEventListener("click", () => {
-    modal28.close();
-    modal28.setAttribute("class", "hid hid1");
-
-    setTimeout(() => {
-      modal.classList.remove("hid1");
-    }, 100);
-  });
-
   const element12 = document.querySelector(".modal2-btn");
   const element13 = document.querySelector("#regis-center");
   const element14 = document.querySelector("#adminis-center");
