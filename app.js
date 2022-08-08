@@ -96,23 +96,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // //
 
   $(function () {
-        $('.genealogy-tree ul').hide();
-        $('.genealogy-tree>ul').show();
-        $('.genealogy-tree ul.active').show();
-        $('.genealogy-tree li').on('click', function (e) {
-            var children = $(this).find('> ul');  
-            if (children.is(":visible")) children.hide('fast').removeClass('active');
-            else children.show('fast').addClass('active');
-            e.stopPropagation();
-        });
+    $(".genealogy-tree ul").hide();
+    $(".genealogy-tree>ul").show();
+    $(".genealogy-tree ul.active").show();
+    $(".genealogy-tree li").on("click", function (e) {
+      var children = $(this).find("> ul");
+      if (children.is(":visible")) children.hide("fast").removeClass("active");
+      else children.show("fast").addClass("active");
+      e.stopPropagation();
     });
-
-
-   
-
- 
-
-
+  });
 
   // modal
   const modal = document.querySelector("#infomodal");
@@ -515,6 +508,259 @@ document.addEventListener("DOMContentLoaded", function (event) {
   closeModal17.addEventListener("click", () => {
     modal17.close();
     modal17.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal18
+  const modal18 = document.querySelector("#infomodal18");
+  const openModal18 = document.querySelector(".open-button18");
+  const closeModal18 = document.querySelector(".close-btn18");
+
+  openModal18.addEventListener("click", () => {
+    modal18.showModal();
+    modal18.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal18.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal18.addEventListener("click", () => {
+    modal18.close();
+    modal18.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal19
+  const modal19 = document.querySelector("#infomodal19");
+  const openModal19 = document.querySelector(".open-button19");
+  const closeModal19 = document.querySelector(".close-btn19");
+
+  openModal19.addEventListener("click", () => {
+    modal19.showModal();
+    modal19.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal19.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal19.addEventListener("click", () => {
+    modal19.close();
+    modal19.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal20
+  const modal20 = document.querySelector("#infomodal20");
+  const openModal20 = document.querySelector(".open-button20");
+  const closeModal20 = document.querySelector(".close-btn20");
+
+  openModal20.addEventListener("click", () => {
+    modal20.showModal();
+    modal20.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal20.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal20.addEventListener("click", () => {
+    modal20.close();
+    modal20.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal21
+  const modal21 = document.querySelector("#infomodal21");
+  const openModal21 = document.querySelector(".open-button21");
+  const closeModal21 = document.querySelector(".close-btn21");
+
+  openModal21.addEventListener("click", () => {
+    modal21.showModal();
+    modal21.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal21.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal21.addEventListener("click", () => {
+    modal21.close();
+    modal21.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal22
+  const modal22 = document.querySelector("#infomodal22");
+  const openModal22 = document.querySelector(".open-button22");
+  const closeModal22 = document.querySelector(".close-btn22");
+
+  openModal22.addEventListener("click", () => {
+    modal22.showModal();
+    modal22.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal22.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal22.addEventListener("click", () => {
+    modal22.close();
+    modal22.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal23
+  const modal23 = document.querySelector("#infomodal23");
+  const openModal23 = document.querySelector(".open-button23");
+  const closeModal23 = document.querySelector(".close-btn23");
+
+  openModal23.addEventListener("click", () => {
+    modal23.showModal();
+    modal23.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal23.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal23.addEventListener("click", () => {
+    modal23.close();
+    modal23.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal24
+  const modal24 = document.querySelector("#infomodal24");
+  const openModal24 = document.querySelector(".open-button24");
+  const closeModal24 = document.querySelector(".close-btn24");
+
+  openModal24.addEventListener("click", () => {
+    modal24.showModal();
+    modal24.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal24.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal24.addEventListener("click", () => {
+    modal24.close();
+    modal24.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal25
+  const modal25 = document.querySelector("#infomodal25");
+  const openModal25 = document.querySelector(".open-button25");
+  const closeModal25 = document.querySelector(".close-btn25");
+
+  openModal25.addEventListener("click", () => {
+    modal25.showModal();
+    modal25.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal25.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal25.addEventListener("click", () => {
+    modal25.close();
+    modal25.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal26
+  const modal26 = document.querySelector("#infomodal26");
+  const openModal26 = document.querySelector(".open-button26");
+  const closeModal26 = document.querySelector(".close-btn26");
+
+  openModal26.addEventListener("click", () => {
+    modal26.showModal();
+    modal26.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal26.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal26.addEventListener("click", () => {
+    modal26.close();
+    modal26.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal27
+  const modal27 = document.querySelector("#infomodal27");
+  const openModal27 = document.querySelector(".open-button27");
+  const closeModal27 = document.querySelector(".close-btn27");
+
+  openModal27.addEventListener("click", () => {
+    modal27.showModal();
+    modal27.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal27.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal27.addEventListener("click", () => {
+    modal27.close();
+    modal27.setAttribute("class", "hid hid1");
+
+    setTimeout(() => {
+      modal.classList.remove("hid1");
+    }, 100);
+  });
+
+  // modal28
+  const modal28 = document.querySelector("#infomodal28");
+  const openModal28 = document.querySelector(".open-button28");
+  const closeModal28 = document.querySelector(".close-btn28");
+
+  openModal28.addEventListener("click", () => {
+    modal28.showModal();
+    modal28.setAttribute("class", "infomodal hid2");
+
+    setTimeout(() => {
+      modal27.classList.remove("hid2");
+    }, 100);
+  });
+
+  closeModal28.addEventListener("click", () => {
+    modal28.close();
+    modal28.setAttribute("class", "hid hid1");
 
     setTimeout(() => {
       modal.classList.remove("hid1");
