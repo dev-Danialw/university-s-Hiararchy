@@ -40,201 +40,187 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // });
 
   // modal
-
-  // const modal = document.querySelectorAll("#infomodal");
-  // const openModal = document.querySelectorAll(".open-button");
-  // const closeModal = document.querySelectorAll(".close-btn");
-
-  let openModal = document.querySelectorAll(".actionBtn");
+  let openModal = document.querySelectorAll(".cta");
 
   openModal.forEach((e) => {
     e.addEventListener("click", () => {
-      let dialog = e.lastElementChild;
-      console.log(dialog);
+      let dialog = e.nextElementSibling;
       dialog.showModal();
-      dialog.classList.add("infomodal");
+      dialog.classList.add("infomodal", "hid2");
+
+      setTimeout(() => {
+        dialog.classList.remove("hid2");
+      }, 100);
     });
   });
 
-  // closeModal.addEventListener("click", () => {
-  //   modal.close();
-  //   modal.setAttribute("class", "hid hid1");
+  let closeModal = document.querySelectorAll(".close-btn");
 
-  //   setTimeout(() => {
-  //     modal.classList.remove("hid1");
-  //   }, 100);
-  // });
+  closeModal.forEach((e) => {
+    e.addEventListener("click", () => {
+      let dialog = e.parentNode;
+      dialog.close();
+      dialog.classList.remove("infomodal");
+      dialog.classList.add("hid1");
 
-  // openModal.addEventListener("click", () => {
-  //   modal.showModal();
-  //   modal.setAttribute("class", "infomodal hid2");
+      setTimeout(() => {
+        dialog.classList.remove("hid1");
+      }, 100);
+    });
+  });
 
-  //   setTimeout(() => {
-  //     modal.classList.remove("hid2");
-  //   }, 100);
-  // });
+  const element12 = document.querySelector(".modal2-btn");
+  const element13 = document.querySelector("#regis-center");
+  const element14 = document.querySelector("#adminis-center");
+  const element15 = document.querySelector(".kkk");
+  const element16 = document.querySelectorAll(".controller-exm");
+  const element17 = document.querySelectorAll(".controller-exm-1");
+  const element18 = document.querySelectorAll(".faculties");
+  const element19 = document.querySelectorAll(".academics");
+  const element20 = document.querySelectorAll(".dean-health");
+  const element21 = document.querySelectorAll(".dean-science");
+  const element22 = document.querySelectorAll(".dean-humanity");
 
-  // closeModal.addEventListener("click", () => {
-  //   modal.close();
-  //   modal.setAttribute("class", "hid hid1");
+  element12.addEventListener("click", () => {
+    setTimeout(() => {
+      document.querySelector(".modal2-btn").scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "center",
+      });
+    }, 200);
+  });
 
-  //   setTimeout(() => {
-  //     modal.classList.remove("hid1");
-  //   }, 100);
-  // });
+  element13.addEventListener("click", () => {
+    console.log("element 13");
+    setTimeout(() => {
+      document.querySelector(".modal2-btn").scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "center",
+      });
+    }, 400);
+  });
+  element14.addEventListener("click", () => {
+    console.log("element 14");
+    setTimeout(() => {
+      document.querySelector(".modal2-btn").scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "center",
+      });
+    }, 400);
+  });
 
-  // const element12 = document.querySelector(".modal2-btn");
-  // const element13 = document.querySelector("#regis-center");
-  // const element14 = document.querySelector("#adminis-center");
-  // const element15 = document.querySelector(".kkk");
-  // const element16 = document.querySelectorAll(".controller-exm");
-  // const element17 = document.querySelectorAll(".controller-exm-1");
-  // const element18 = document.querySelectorAll(".faculties");
-  // const element19 = document.querySelectorAll(".academics");
-  // const element20 = document.querySelectorAll(".dean-health");
-  // const element21 = document.querySelectorAll(".dean-science");
-  // const element22 = document.querySelectorAll(".dean-humanity");
+  element15.addEventListener("click", () => {
+    console.log("element 15");
 
-  // element12.addEventListener("click", () => {
-  //   setTimeout(() => {
-  //     document.querySelector(".modal2-btn").scrollIntoView({
-  //       behavior: "auto",
-  //       block: "center",
-  //       inline: "center",
-  //     });
-  //   }, 200);
-  // });
+    setTimeout(() => {
+      document.querySelector(".modal2-btn").scrollIntoView({
+        behavior: "auto",
+        block: "center",
+        inline: "center",
+      });
+    }, 400);
+  });
 
-  // element13.addEventListener("click", () => {
-  //   console.log("element 13");
-  //   setTimeout(() => {
-  //     document.querySelector(".modal2-btn").scrollIntoView({
-  //       behavior: "auto",
-  //       block: "center",
-  //       inline: "center",
-  //     });
-  //   }, 400);
-  // });
-  // element14.addEventListener("click", () => {
-  //   console.log("element 14");
-  //   setTimeout(() => {
-  //     document.querySelector(".modal2-btn").scrollIntoView({
-  //       behavior: "auto",
-  //       block: "center",
-  //       inline: "center",
-  //     });
-  //   }, 400);
-  // });
+  element16.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 16");
 
-  // element15.addEventListener("click", () => {
-  //   console.log("element 15");
+      setTimeout(() => {
+        document.querySelector(".controller-exm").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
 
-  //   setTimeout(() => {
-  //     document.querySelector(".modal2-btn").scrollIntoView({
-  //       behavior: "auto",
-  //       block: "center",
-  //       inline: "center",
-  //     });
-  //   }, 400);
-  // });
+  element17.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 17");
 
-  // element16.forEach((e) => {
-  //   return e.addEventListener("click", () => {
-  //     console.log("element 16");
+      setTimeout(() => {
+        document.querySelector(".controller-exm-1").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
 
-  //     setTimeout(() => {
-  //       document.querySelector(".controller-exm").scrollIntoView({
-  //         behavior: "auto",
-  //         block: "start",
-  //         inline: "center",
-  //       });
-  //     }, 400);
-  //   });
-  // });
+  element18.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 18");
 
-  // element17.forEach((e) => {
-  //   return e.addEventListener("click", () => {
-  //     console.log("element 17");
+      setTimeout(() => {
+        document.querySelector(".faculties").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
 
-  //     setTimeout(() => {
-  //       document.querySelector(".controller-exm-1").scrollIntoView({
-  //         behavior: "auto",
-  //         block: "start",
-  //         inline: "center",
-  //       });
-  //     }, 400);
-  //   });
-  // });
+  element19.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 19");
 
-  // element18.forEach((e) => {
-  //   return e.addEventListener("click", () => {
-  //     console.log("element 18");
+      setTimeout(() => {
+        document.querySelector(".academics").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
 
-  //     setTimeout(() => {
-  //       document.querySelector(".faculties").scrollIntoView({
-  //         behavior: "auto",
-  //         block: "start",
-  //         inline: "center",
-  //       });
-  //     }, 400);
-  //   });
-  // });
+  element20.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 20");
 
-  // element19.forEach((e) => {
-  //   return e.addEventListener("click", () => {
-  //     console.log("element 19");
+      setTimeout(() => {
+        document.querySelector(".dean-health").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
 
-  //     setTimeout(() => {
-  //       document.querySelector(".academics").scrollIntoView({
-  //         behavior: "auto",
-  //         block: "start",
-  //         inline: "center",
-  //       });
-  //     }, 400);
-  //   });
-  // });
+  element21.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 21");
 
-  // element20.forEach((e) => {
-  //   return e.addEventListener("click", () => {
-  //     console.log("element 20");
+      setTimeout(() => {
+        document.querySelector(".dean-science").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
 
-  //     setTimeout(() => {
-  //       document.querySelector(".dean-health").scrollIntoView({
-  //         behavior: "auto",
-  //         block: "start",
-  //         inline: "center",
-  //       });
-  //     }, 400);
-  //   });
-  // });
+  element22.forEach((e) => {
+    return e.addEventListener("click", () => {
+      console.log("element 22");
 
-  // element21.forEach((e) => {
-  //   return e.addEventListener("click", () => {
-  //     console.log("element 21");
-
-  //     setTimeout(() => {
-  //       document.querySelector(".dean-science").scrollIntoView({
-  //         behavior: "auto",
-  //         block: "start",
-  //         inline: "center",
-  //       });
-  //     }, 400);
-  //   });
-  // });
-
-  // element22.forEach((e) => {
-  //   return e.addEventListener("click", () => {
-  //     console.log("element 22");
-
-  //     setTimeout(() => {
-  //       document.querySelector(".dean-humanity").scrollIntoView({
-  //         behavior: "auto",
-  //         block: "start",
-  //         inline: "center",
-  //       });
-  //     }, 400);
-  //   });
-  // });
+      setTimeout(() => {
+        document.querySelector(".dean-humanity").scrollIntoView({
+          behavior: "auto",
+          block: "start",
+          inline: "center",
+        });
+      }, 400);
+    });
+  });
 
   // tidbit
   const typSpd = 70;
