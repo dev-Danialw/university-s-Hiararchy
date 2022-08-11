@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Dancing+Script:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=BIZ+UDGothic&family=Dancing+Script:wght@500&family=Permanent+Marker&display=swap");
-
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 /*----------------genealogy-scroll----------*/
@@ -105,9 +103,9 @@ html {
 }
 
 body {
-  -moz-transform: scale(0.6, 0.6);
+  -moz-transform: scale(0.55, 0.55);
   zoom: 0.6;
-  zoom: 67%;
+  zoom: 55%;
 }
 .genealogy-tree li::after {
   right: auto;
@@ -149,7 +147,7 @@ body {
 .genealogy-tree li div {
   text-decoration: none;
   color: #666;
-  font-family: "Poppins", sans-serif;
+  font-family: arial, verdana, tahoma;
   font-size: 11px;
   display: inline-flex;
   flex-direction: column;
@@ -187,6 +185,10 @@ body {
 .h1-main {
   text-align: center;
   margin-top: 1rem;
+}
+
+.red {
+  color: red;
 }
 
 .designation-card {
@@ -263,7 +265,7 @@ body {
 }
 
 .card .content .details h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   color: #555;
@@ -271,19 +273,20 @@ body {
 }
 
 .card .content h3 {
-  margin-top: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
 }
 
 .card .content h3 {
   background: black;
   background: linear-gradient(45deg, #fbda61, #ff5acd);
-  padding: 0.5rem;
-  border-radius: 12px;
+  padding: 0.25rem;
+  color: black;
+  border-radius: 15px;
   color: white;
 }
 
@@ -410,6 +413,121 @@ a {
   }
 }
 
+/* modal */
+
+.infomodal {
+  -webkit-box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
+  box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  width: 70%;
+
+  zoom: 125%;
+  overflow: hidden;
+  position: fixed;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+}
+.hid {
+  display: none;
+}
+.infomodal::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  color: lightcoral;
+  cursor: pointer;
+}
+.default-closebtn {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  color: lightcoral;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.lft-side {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
+  height: inherit;
+}
+.pic {
+  padding: 0.5rem;
+}
+.contact {
+  text-align: left;
+  margin: 1rem;
+}
+.contact h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  padding: 1.2rem 0 1.2rem;
+}
+.contact p {
+  align-items: center;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.rgt-side {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  text-align: left;
+  white-space: normal;
+  height: inherit;
+  width: 100%;
+  padding: 2.5rem;
+}
+.description {
+  padding: 0.5rem;
+}
+.description h1 {
+  font-weight: 300;
+  font-size: 2em;
+}
+.description h1 > span {
+  font-weight: 600;
+  font-size: rem;
+}
+.description h2 > span {
+  font-weight: 300;
+}
+.description h3 {
+  padding: 1rem 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 320;
+}
+.description p {
+  font-size: 1rem;
+  font-weight: 390;
+  padding: 0.5rem 0 0.5rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
 .msg-icn {
   display: inline-block;
   position: absolute;
@@ -513,12 +631,6 @@ a {
   }
 }
 
-.hid {
-  display: none;
-}
-
-/* modal */
-
 .infomodal {
   -webkit-box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
   box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
@@ -530,10 +642,10 @@ a {
   gap: 0.4rem;
 
   padding: 1.2rem;
-  width: 60%;
+  width: 80%;
   height: 950px;
 
-  zoom: 125%;
+  zoom: 135%;
 }
 
 /* @media (max-width: 600px) {
@@ -547,7 +659,6 @@ a {
   .pic > img {
     box-shadow: 2px 0px 12px 5px rgba(0, 0, 0, 0.37);
   }
-
   .infomodal .rgt-side {
     height: 100%;
   }
